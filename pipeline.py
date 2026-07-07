@@ -18,7 +18,7 @@ def extract_data():
 
     res = conn.getresponse()
     data = res.read()
-    gasprices_data = json.loads(data.decode("utf-8"))  # FIXED
+    gasprices_data = json.loads(data.decode("utf-8")) 
 
     return gasprices_data
 
